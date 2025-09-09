@@ -9,6 +9,7 @@ interface TodoStore {
   todos: Todo[];
   addTodo: (title: string) => void;
   removeTodo: (id: number) => void;
+
 }
 
 const useTodoStore = create<TodoStore>((set) => ({
@@ -24,5 +25,6 @@ const useTodoStore = create<TodoStore>((set) => ({
       todos: state.todos.filter((todo) => todo.id !== id),
     })),
 }));
+
 
 export default useTodoStore;

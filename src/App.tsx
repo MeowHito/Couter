@@ -1,19 +1,12 @@
-import './App.css'
-import CounterDec from './component/CouterDec'
-import CounterInc from './component/Couterinc'
-import CounterScore from './component/CouterScore'
+import TodoForm from "./component/TodoForm";
+import TodoList from "./component/TodoList";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <div>
-        <CounterScore />
-        <CounterInc />
-        <CounterDec />
-        
-      </div>
-    </>
-  )
+    <div className="max-w-lg mx-auto mt-10">
+      <h1 className="text-2xl font-bold mb-5"> </h1>
+      <TodoForm />
+      <TodoList />
+    </div>
+  );
 }
-
-export default App
